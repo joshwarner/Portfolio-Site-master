@@ -45,24 +45,11 @@ section .wrapper {
   }
 }
 /* line 38, scss/main.scss */
-section a.title-link {
-  display: block;
-  position: relative;
-  text-align: center;
-  margin: auto;
-  padding: 1.6em;
-  border: 3px solid #ff4c44;
-}
-/* line 46, scss/main.scss */
-section a.title-link:hover {
-  border: 3px solid #ff9591;
-}
-/* line 49, scss/main.scss */
 section p {
   margin: 14% 0 7% 0;
 }
 @media screen and (min-width: 730px) {
-  /* line 49, scss/main.scss */
+  /* line 38, scss/main.scss */
   section p {
     margin-top: 90px;
     font-size: 1.2em;
@@ -70,24 +57,113 @@ section p {
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 49, scss/main.scss */
+  /* line 38, scss/main.scss */
   section p {
     font-size: 1.3em;
     line-height: 1.8em;
   }
 }
-/* line 61, scss/main.scss */
+/* line 50, scss/main.scss */
 section p:nth-child(3) {
   margin-top: 7%;
 }
 @media screen and (min-width: 730px) {
-  /* line 61, scss/main.scss */
+  /* line 50, scss/main.scss */
   section p:nth-child(3) {
     margin-top: 60px;
   }
 }
 
-/* line 69, scss/main.scss */
+/* line 58, scss/main.scss */
+#hero {
+  height: 100%;
+  background: #fafafa;
+}
+/* line 61, scss/main.scss */
+#hero #hero_wrapper {
+  margin: 0 auto;
+  padding: 5% 10% 12% 10%;
+  max-width: 800px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 61, scss/main.scss */
+  #hero #hero_wrapper {
+    padding: 8% 0;
+  }
+}
+/* line 70, scss/main.scss */
+#hero #hero_logo {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  min-width: 240px;
+  min-height: 260px;
+  margin: 0 auto 5%;
+  padding: 5%;
+  background: url("../img/W-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* line 82, scss/main.scss */
+#hero h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 15% 0 0 0;
+}
+@media screen and (min-width: 550px) {
+  /* line 82, scss/main.scss */
+  #hero h1 {
+    padding: 12% 0 0 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 82, scss/main.scss */
+  #hero h1 {
+    padding: 10% 0 0 0;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 82, scss/main.scss */
+  #hero h1 {
+    padding: 8% 0 0 0;
+  }
+}
+/* line 96, scss/main.scss */
+#hero p {
+  width: 80%;
+  margin: 2% auto;
+}
+@media screen and (min-width: 650px) {
+  /* line 96, scss/main.scss */
+  #hero p {
+    margin: 6% auto;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 96, scss/main.scss */
+  #hero p {
+    margin: 10% auto;
+  }
+}
+/* line 106, scss/main.scss */
+#hero p:nth-child(2) {
+  margin-bottom: 0;
+}
+/* line 109, scss/main.scss */
+#hero p:nth-child(4) {
+  margin-top: 0;
+}
+/* line 112, scss/main.scss */
+#hero hr {
+  height: 0;
+  width: 60%;
+  max-width: 200px;
+  margin: 5% auto;
+  border: 1px solid #ff4c44;
+}
+
+/* line 121, scss/main.scss */
 img {
   display: block;
   width: 100%;
@@ -95,58 +171,58 @@ img {
   margin: 8% auto;
 }
 
-/* line 76, scss/main.scss */
+/* line 128, scss/main.scss */
 .ywam_wrapper {
   display: block;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
-/* line 81, scss/main.scss */
+/* line 133, scss/main.scss */
 .ywam_wrapper img {
   max-width: 400px;
 }
 @media screen and (min-width: 600px) {
-  /* line 85, scss/main.scss */
+  /* line 137, scss/main.scss */
   .ywam_wrapper img {
     float: left;
     margin: 0;
     width: 45%;
     max-width: 380px;
   }
-  /* line 92, scss/main.scss */
+  /* line 144, scss/main.scss */
   .ywam_wrapper img:nth-child(2), .ywam_wrapper img:nth-child(4) {
     margin-left: 10%;
   }
-  /* line 95, scss/main.scss */
+  /* line 147, scss/main.scss */
   .ywam_wrapper img:nth-child(3), .ywam_wrapper img:nth-child(4) {
     margin-top: 10%;
   }
 }
 
-/* line 102, scss/main.scss */
+/* line 154, scss/main.scss */
 ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 108, scss/main.scss */
+/* line 160, scss/main.scss */
 #contact ul {
   margin-top: 5%;
 }
-/* line 111, scss/main.scss */
+/* line 163, scss/main.scss */
 #contact li {
   display: inline;
   margin-right: 3%;
 }
 @media screen and (min-width: 750px) {
-  /* line 111, scss/main.scss */
+  /* line 163, scss/main.scss */
   #contact li {
     font-size: 1.1em;
   }
 }
 
-/* line 120, scss/main.scss */
+/* line 172, scss/main.scss */
 a {
   color: #ff4c44;
   font-family: "Karla", Helvetica, sans-serif;
@@ -158,21 +234,36 @@ a {
   transition: .5s;
 }
 
-/* line 132, scss/main.scss */
+/* line 184, scss/main.scss */
 a:hover {
   color: #ff9591;
 }
 
-/* line 136, scss/main.scss */
+/* line 188, scss/main.scss */
+.title-link {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 1.6em;
+  border: 3px solid #ff4c44;
+}
+
+/* line 196, scss/main.scss */
+.title-link:hover {
+  border: 3px solid #ff9591;
+}
+
+/* line 200, scss/main.scss */
 h1 {
   color: #ff4c44;
   margin: 0;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 4em;
   line-height: 1.05em;
 }
 
-/* line 144, scss/main.scss */
+/* line 208, scss/main.scss */
 h2, h3 {
   font-family: "Karla", Helvetica, sans-serif;
   font-weight: 400;
@@ -181,41 +272,41 @@ h2, h3 {
   letter-spacing: 0.1em;
 }
 @media screen and (min-width: 750px) {
-  /* line 144, scss/main.scss */
+  /* line 208, scss/main.scss */
   h2, h3 {
     font-size: 2em;
     line-height: 1.4em;
   }
 }
 
-/* line 157, scss/main.scss */
+/* line 221, scss/main.scss */
 h2 {
   text-align: center;
   color: #e2e2e2;
 }
 
-/* line 162, scss/main.scss */
+/* line 226, scss/main.scss */
 h3.subtitle {
   padding: 0;
 }
 
-/* line 166, scss/main.scss */
+/* line 230, scss/main.scss */
 .title_bar {
   background-color: #ff4c44;
   max-height: 268px;
 }
-/* line 169, scss/main.scss */
+/* line 233, scss/main.scss */
 .title_bar .wrapper {
   padding: 8%;
 }
 @media screen and (min-width: 750px) {
-  /* line 169, scss/main.scss */
+  /* line 233, scss/main.scss */
   .title_bar .wrapper {
     padding: 80px;
   }
 }
 
-/* line 177, scss/main.scss */
+/* line 241, scss/main.scss */
 header {
   position: fixed;
   bottom: 0;
@@ -223,84 +314,54 @@ header {
   width: 100%;
   background-color: #fafafa;
 }
-/* line 183, scss/main.scss */
+/* line 247, scss/main.scss */
 header nav {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
 }
-/* line 188, scss/main.scss */
+/* line 252, scss/main.scss */
 header nav li {
   display: inline-block;
   padding-left: 6%;
 }
-/* line 192, scss/main.scss */
+/* line 256, scss/main.scss */
 header nav li:first-child {
   padding-left: 0;
 }
 
-/* line 200, scss/main.scss */
+/* line 264, scss/main.scss */
 .headroom {
   transition: transform 200ms linear;
 }
 
-/* line 201, scss/main.scss */
+/* line 265, scss/main.scss */
 .headroom--unpinned {
   transform: translateY(0%);
 }
 
-/* line 202, scss/main.scss */
+/* line 266, scss/main.scss */
 .headroom--pinned {
   transform: translateY(0%);
 }
 
-/* line 204, scss/main.scss */
-#hero {
-  height: 100%;
-  background: #fafafa;
-}
-/* line 207, scss/main.scss */
-#hero #hero_wrapper {
-  padding: 10%;
-  max-width: 600px;
-}
-/* line 211, scss/main.scss */
-#hero #hero_logo {
-  position: relative;
-  width: 90%;
-  height: 100%;
-  min-width: 240px;
-  min-height: 260px;
-  margin: 0 auto;
-  padding: 5%;
-  background: url("../img/W-logo.svg") no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-/* line 223, scss/main.scss */
-#hero h1 {
-  display: block;
-  margin: 0 auto;
-  padding: 5% 0 0 5%;
-}
-
-/* line 230, scss/main.scss */
+/* line 270, scss/main.scss */
 #py {
   background-color: #fafafa;
 }
 
-/* line 234, scss/main.scss */
+/* line 274, scss/main.scss */
 #bpoint {
   background-color: #e2e2e2;
 }
 
-/* line 238, scss/main.scss */
+/* line 278, scss/main.scss */
 #ywam {
   background-color: #fafafa;
 }
 
-/* line 242, scss/main.scss */
+/* line 282, scss/main.scss */
 #scroll {
   display: block;
   height: 1em;

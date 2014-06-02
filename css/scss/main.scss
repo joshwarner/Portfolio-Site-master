@@ -35,17 +35,6 @@ section {
 			padding: 110px 8%;
 		}
 	}
-	a.title-link {
-    	display: block;
-    	position: relative;
-    	text-align: center;
-    	margin: auto;
-    	padding: 1.6em;
-    	border: 3px solid $red;
-    }
-    a.title-link:hover {
-    	border: 3px solid $link-hover;
-    }
     p {
   		margin: 14% 0 7% 0;
   		@media screen and (min-width: 730px) {
@@ -64,6 +53,69 @@ section {
     		margin-top: 60px;
     	}
     }
+}
+
+#hero {
+	height: 100%;
+	background: $white;
+	#hero_wrapper {
+		margin: 0 auto;
+		padding: 5% 10% 12% 10%;
+		max-width: 800px;
+		text-align: center;
+		@media screen and (min-width: 800px) {
+			padding: 8% 0;
+		}
+	}
+	#hero_logo {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	min-width: 240px;
+	min-height: 260px;
+	margin: 0 auto 5%;
+	padding: 5%;
+	background: url("../img/W-logo.svg") no-repeat;
+	background-size: contain;
+	background-position: center;
+	}
+	h1 {
+		display: block;
+		margin: 0 auto;
+		padding: 15% 0 0 0;
+		@media screen and (min-width: 550px) {
+			padding: 12% 0 0 0;
+		}
+		@media screen and (min-width: 650px) {
+			padding: 10% 0 0 0;
+		}
+		@media screen and (min-width: 750px) {
+			padding: 8% 0 0 0;
+		}
+	}
+	p {
+		width: 80%;
+		margin: 2% auto;
+		@media screen and (min-width: 650px) {
+			margin: 6% auto;
+		}
+		@media screen and (min-width: 750px) {
+			margin: 10% auto;
+		}
+	}
+	p:nth-child(2) {
+		margin-bottom: 0;
+	}
+	p:nth-child(4) {
+		margin-top: 0;
+	}
+	hr {
+		height: 0;
+		width: 60%;
+		max-width: 200px;
+		margin: 5% auto;
+		border: 1px solid $red;
+	}
 }
 
 img {
@@ -133,11 +185,23 @@ a:hover {
 	color: $link-hover;
 }
 
+.title-link {
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	padding: 1.6em;
+	border: 3px solid $red;
+}
+.title-link:hover {
+	border: 3px solid $link-hover;
+}
+
 h1 {
 	color: $red;
 	margin: 0;
 	font-weight: $normal;
-	font-size: 3em;
+	font-size: 4em;
 	line-height: 1.05em;
 }
 
@@ -201,31 +265,7 @@ header {
 .headroom--unpinned {transform: translateY(0%);}
 .headroom--pinned {transform: translateY(0%);}
 
-#hero {
-	height: 100%;
-	background: $white;
-	#hero_wrapper {
-		padding: 10%;
-		max-width: 600px;
-	}
-	#hero_logo {
-	position: relative;
-	width: 90%;
-	height: 100%;
-	min-width: 240px;
-	min-height: 260px;
-	margin: 0 auto;
-	padding: 5%;
-	background: url("../img/W-logo.svg") no-repeat;
-	background-size: contain;
-	background-position: center;
-	}
-	h1 {
-		display: block;
-		margin: 0 auto;
-		padding: 5% 0 0 5%;
-	}
-}
+
 
 #py {
 	background-color: $white;
