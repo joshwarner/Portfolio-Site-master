@@ -1,519 +1,312 @@
-@-webkit-viewport {width: device-width;}
-@-moz-viewport {width: device-width;}
-@-ms-viewport {width: device-width;}
-@-o-viewport {width: device-width;}
-@viewport {width: device-width;}
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+/* line 4, scss/main.scss */
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* line 10, scss/main.scss */
 html {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  font-family: "Karla", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #424244;
 }
 
-ul {
-    padding: 0;
+/* line 20, scss/main.scss */
+body {
+  height: 100%;
 }
 
-header {
-    background: rgba(243,233,208,1);
+/* line 24, scss/main.scss */
+section {
+  width: 100%;
+  height: 100%;
+}
+/* line 27, scss/main.scss */
+section .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16% 8%;
+}
+@media screen and (min-width: 570px) {
+  /* line 27, scss/main.scss */
+  section .wrapper {
+    padding: 12% 8%;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 27, scss/main.scss */
+  section .wrapper {
+    padding: 110px 8%;
+  }
+}
+/* line 38, scss/main.scss */
+section a.title-link {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 1.6em;
+  border: 3px solid #ff4c44;
+}
+/* line 46, scss/main.scss */
+section a.title-link:hover {
+  border: 3px solid #ff9591;
+}
+/* line 49, scss/main.scss */
+section p {
+  margin: 14% 0 7% 0;
+}
+@media screen and (min-width: 730px) {
+  /* line 49, scss/main.scss */
+  section p {
+    margin-top: 90px;
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 49, scss/main.scss */
+  section p {
+    font-size: 1.3em;
+    line-height: 1.8em;
+  }
+}
+/* line 61, scss/main.scss */
+section p:nth-child(3) {
+  margin-top: 7%;
+}
+@media screen and (min-width: 730px) {
+  /* line 61, scss/main.scss */
+  section p:nth-child(3) {
+    margin-top: 60px;
+  }
 }
 
-#logo {
-    height: 20px;
-    width: 50px;
-    float: left;
-    background: #fff;
+/* line 69, scss/main.scss */
+img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 8% auto;
 }
 
-/*
-
-nav ul {
-    display: block;
-    height: 30px;
+/* line 76, scss/main.scss */
+.ywam_wrapper {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-nav ul li {
-    margin: 0;
-    display: inline-block;
-    width: 24%;
+/* line 81, scss/main.scss */
+.ywam_wrapper img {
+  max-width: 400px;
 }
-
-*/
-
-.wrapper {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
-
-#hero {
-    background:rgba(52,55,63,1);
-}
-
-#hero hr {
-    width: 80%;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-#hero-wrapper {
-    padding: 5% 0;
-    width: 100%;
-    max-width: 400px;
-    max-height: 400px;
-    background: #000;
-    color: #fff;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5em;
-    font-weight: 600;
-    line-height: 1.2em;
-
-}
-
-    .hero_of {
-        font-size: 0.8em;
-        font-weight: 300;
-        font-style: italic;
-    }
-
-
-.titlebar {
-    width: 100%;
-    height: 10%;
-    padding: 3% 0;
-    text-align: center;
-    background: rgba(0,0,0,0.2);
-}
-
-
-
-#gallery div {
-    display: block;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 200px;
-}
-
-#gallery a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-/*    text-indent: -9999px; */
-}
-
-#gallery a:hover {
-    background: rgba(100,100,100,1);
-}
-
-#skills div, #experience div, #education div {
-    padding: 4%;
-    margin: 0;
-}
-
-#experience div {
-    background: rgba(0,0,0,0.1);
-}
-
-#education div {
-    box-sizing: border-box;
-    background: rgba(0,0,0,0.15);
-    border-bottom: 1px solid #eee;
-}
-
-footer {
-    display: block;
-    width: 100%;
-    height: 60px;
-    background: rgba(104,118,117,1);
-    color: #eee;
-    padding: 2% 0;
-}
-
-footer ul {
-    position: absolute;
-    top: 50%
-    width: 100%;
-    margin: 0 auto;
-}
-
-footer li {
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-a.menu-link {
-        float: right;
-            display: block;
-            padding: 1em;
-        }
-        nav[role=navigation] {
-            clear: both;
-            -webkit-transition: all 0.3s ease-out;  
-            -moz-transition: all 0.3s ease-out;
-            -ms-transition: all 0.3s ease-out;
-            -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
-        }
-        .js nav[role=navigation] {
-            overflow: hidden;
-            max-height: 0;
-        }
-        nav[role=navigation].active {
-            max-height: 15em;
-        }
-        nav[role=navigation] ul {
-            margin: 0;
-            padding: 0;
-            border-top: 1px solid #808080;
-        }
-        nav[role=navigation] li a {
-            display: block;
-            padding: 0.8em;
-            border-bottom: 1px solid #808080;
-        }
-        
-        @media screen and (min-width: 48.25em) {
-            a.menu-link {
-               display: none;
-            }
-            .js nav[role=navigation] {
-                max-height: none;
-            }
-            nav[role=navigation] ul {
-                margin: 0 0 0 -0.25em;
-                border: 0;
-            }
-            
-            nav[role=navigation]  li {
-                display: inline-block;
-                margin: 0 0.25em;
-            }
-            nav[role=navigation] li a {
-                border: 0;
-            }
-        }
-
-
-
-
-
-
-
-
 @media screen and (min-width: 600px) {
-    #gallery div {
-        width: 50%;
-        min-height: 300px;
-        float: right;
-    }
-
-    #gallery a:hover {
-    background: rgba(200,100,100,1);
-    }
-
-    #education div {
-        width: 50%;
-        float: left;
-        min-height: 250px;
-        border: 0;
-    }
-}
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
+  /* line 85, scss/main.scss */
+  .ywam_wrapper img {
+    float: left;
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+    width: 45%;
+    max-width: 380px;
+  }
+  /* line 92, scss/main.scss */
+  .ywam_wrapper img:nth-child(2), .ywam_wrapper img:nth-child(4) {
+    margin-left: 10%;
+  }
+  /* line 95, scss/main.scss */
+  .ywam_wrapper img:nth-child(3), .ywam_wrapper img:nth-child(4) {
+    margin-top: 10%;
+  }
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+/* line 102, scss/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+/* line 108, scss/main.scss */
+#contact ul {
+  margin-top: 5%;
+}
+/* line 111, scss/main.scss */
+#contact li {
+  display: inline;
+  margin-right: 3%;
+}
+@media screen and (min-width: 750px) {
+  /* line 111, scss/main.scss */
+  #contact li {
+    font-size: 1.1em;
+  }
 }
 
-.clearfix:after {
-    clear: both;
+/* line 120, scss/main.scss */
+a {
+  color: #ff4c44;
+  font-family: "Karla", Helvetica, sans-serif;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
+/* line 132, scss/main.scss */
+a:hover {
+  color: #ff9591;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* line 136, scss/main.scss */
+h1 {
+  color: #ff4c44;
+  margin: 0;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 1.05em;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+/* line 144, scss/main.scss */
+h2, h3 {
+  font-family: "Karla", Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 1em 0;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 750px) {
+  /* line 144, scss/main.scss */
+  h2, h3 {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+/* line 157, scss/main.scss */
+h2 {
+  text-align: center;
+  color: #e2e2e2;
+}
 
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+/* line 162, scss/main.scss */
+h3.subtitle {
+  padding: 0;
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+/* line 166, scss/main.scss */
+.title_bar {
+  background-color: #ff4c44;
+  max-height: 268px;
+}
+/* line 169, scss/main.scss */
+.title_bar .wrapper {
+  padding: 8%;
+}
+@media screen and (min-width: 750px) {
+  /* line 169, scss/main.scss */
+  .title_bar .wrapper {
+    padding: 80px;
+  }
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+/* line 177, scss/main.scss */
+header {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fafafa;
+}
+/* line 183, scss/main.scss */
+header nav {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 188, scss/main.scss */
+header nav li {
+  display: inline-block;
+  padding-left: 6%;
+}
+/* line 192, scss/main.scss */
+header nav li:first-child {
+  padding-left: 0;
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+/* line 200, scss/main.scss */
+.headroom {
+  transition: transform 200ms linear;
+}
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+/* line 201, scss/main.scss */
+.headroom--unpinned {
+  transform: translateY(0%);
+}
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+/* line 202, scss/main.scss */
+.headroom--pinned {
+  transform: translateY(0%);
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+/* line 204, scss/main.scss */
+#hero {
+  height: 100%;
+  background: #fafafa;
+}
+/* line 207, scss/main.scss */
+#hero #hero_wrapper {
+  padding: 10%;
+  max-width: 600px;
+}
+/* line 211, scss/main.scss */
+#hero #hero_logo {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  min-width: 240px;
+  min-height: 260px;
+  margin: 0 auto;
+  padding: 5%;
+  background: url("../img/W-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* line 223, scss/main.scss */
+#hero h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 5% 0 0 5%;
+}
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+/* line 230, scss/main.scss */
+#py {
+  background-color: #fafafa;
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+/* line 234, scss/main.scss */
+#bpoint {
+  background-color: #e2e2e2;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+/* line 238, scss/main.scss */
+#ywam {
+  background-color: #fafafa;
+}
 
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+/* line 242, scss/main.scss */
+#scroll {
+  display: block;
+  height: 1em;
+  width: 1em;
+  color: #ff4c44;
+  background: url("../img/icons/arrow-down2.svg") no-repeat;
+  background-color: #fafafa;
+  background-size: 1em;
 }

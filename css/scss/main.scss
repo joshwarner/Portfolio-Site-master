@@ -1,0 +1,250 @@
+@import "modules/_all-modules.scss";
+@import "partials/_base.scss";
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: $body-font-family;
+    font-weight: $normal;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    color: $black;
+}
+
+body {
+	height: 100%;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	.wrapper {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 16% 8%;
+		@media screen and (min-width: 570px) {
+			padding: 12% 8%;
+		}
+		@media screen and (min-width: 750px) {
+			padding: 110px 8%;
+		}
+	}
+	a.title-link {
+    	display: block;
+    	position: relative;
+    	text-align: center;
+    	margin: auto;
+    	padding: 1.6em;
+    	border: 3px solid $red;
+    }
+    a.title-link:hover {
+    	border: 3px solid $link-hover;
+    }
+    p {
+  		margin: 14% 0 7% 0;
+  		@media screen and (min-width: 730px) {
+			margin-top: 90px;
+			font-size: 1.2em;
+			line-height: 1.7em;
+		}
+		@media screen and (min-width: 1000px) {
+			font-size: 1.3em;
+			line-height: 1.8em;
+		}
+    }
+    p:nth-child(3) {
+    	margin-top: 7%;
+    	@media screen and (min-width: 730px) {
+    		margin-top: 60px;
+    	}
+    }
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin: 8% auto;
+}
+
+.ywam_wrapper {
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	img {
+		max-width: 400px;
+	}
+	@media screen and (min-width: 600px) {
+		img {
+			float: left;
+			margin: 0;
+			width: 45%;
+			max-width: 380px;
+
+		}
+		img:nth-child(2), img:nth-child(4) {
+			margin-left: 10%;
+		}
+		img:nth-child(3), img:nth-child(4) {
+			margin-top: 10%;
+		}
+	}
+
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+#contact {
+	ul {
+		margin-top: 5%;
+	}
+	li {
+		display: inline;
+		margin-right: 3%;
+		@media screen and (min-width:750px) {
+			font-size: 1.1em;
+		}
+	}
+}
+
+a {
+	color: $link-color;
+	font-family: $body-font-family;
+	text-decoration: none;
+
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+a:hover {
+	color: $link-hover;
+}
+
+h1 {
+	color: $red;
+	margin: 0;
+	font-weight: $normal;
+	font-size: 3em;
+	line-height: 1.05em;
+}
+
+h2, h3 {
+	font-family: $body-font-family;
+	font-weight: $normal;
+	margin: 0;
+	padding: 1em 0;
+	letter-spacing: 0.1em;
+	@media screen and (min-width: 750px) {
+		font-size: 2em;
+		line-height: 1.4em;
+	}
+
+}
+
+h2 {
+	text-align: center;
+	color: $light-grey;
+}
+
+h3.subtitle {
+	padding: 0;
+}
+
+.title_bar {
+	background-color: $red;
+	max-height: 268px;
+	.wrapper {
+		padding: 8%;
+		@media screen and (min-width: 750px) {
+			padding: 80px;
+			}	
+	}
+}
+
+header {
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: $white;
+	nav {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+		li {
+			display: inline-block;
+			padding-left: 6%;
+		}
+		li:first-child {
+			padding-left: 0;
+		}
+	}
+	@media screen and (min-width:550px) {
+	}
+}
+
+.headroom {transition: transform 200ms linear;}
+.headroom--unpinned {transform: translateY(0%);}
+.headroom--pinned {transform: translateY(0%);}
+
+#hero {
+	height: 100%;
+	background: $white;
+	#hero_wrapper {
+		padding: 10%;
+		max-width: 600px;
+	}
+	#hero_logo {
+	position: relative;
+	width: 90%;
+	height: 100%;
+	min-width: 240px;
+	min-height: 260px;
+	margin: 0 auto;
+	padding: 5%;
+	background: url("../img/W-logo.svg") no-repeat;
+	background-size: contain;
+	background-position: center;
+	}
+	h1 {
+		display: block;
+		margin: 0 auto;
+		padding: 5% 0 0 5%;
+	}
+}
+
+#py {
+	background-color: $white;
+}
+
+#bpoint {
+	background-color: $light-grey;
+}
+
+#ywam {
+	background-color: $white;
+}
+
+#scroll {
+	display: block;
+	height: 1em;
+	width: 1em;
+	color: $red;
+	background: url("../img/icons/arrow-down2.svg") no-repeat;
+	background-color: $white;
+	background-size: 1em;
+}
